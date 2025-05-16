@@ -31,7 +31,7 @@ const Header = () => {
                 </div>
                 <button
                     onClick={() => setIsOpen(true)}
-                    className="p-3 block lg:hidden bg-main text-white rounded-md shadow hover:opacity-40 transition"
+                    className="p-3 block lg:hidden bg-blue-900 text-white rounded-md shadow hover:opacity-40 transition"
                 >
                     <img src={hamburger} alt="" className='w-8' />
                 </button>

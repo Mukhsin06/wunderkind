@@ -46,7 +46,7 @@ const Home = () => {
     <div className='font-nunito'>
       {/* hero  */}
       <section className='py-16'>
-        <div className="container mx-auto flex flex-col lg:flex-row items-center gap-8 px-4">
+        <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center gap-8 px-4">
           {/* text panel  */}
           <div className="w-full max-w-[680px]">
             <h1 className='font-bold text-3xl lg:text-5xl text-center lg:text-start mb-2'>Qanday qilib bolalarni Ingliz tili Rus tili, Mental arifmetika va boshqa darslarga qiziqtirish mumkun?
@@ -60,10 +60,10 @@ const Home = () => {
               <li className="cursor-pointer font-semibold text-xl py-3 px-5 bg-white rounded-xl shadow-md hover:shadow-2xl ease-in-out duration-300">5-yosh</li>
               <li className="cursor-pointer font-semibold text-xl py-3 px-5 bg-white rounded-xl shadow-md hover:shadow-2xl ease-in-out duration-300">6-yosh</li>
             </ul>
-            <button className='py-5 mb-2 text-[12px] lg:text-base w-full rounded-2xl bg-orange-600 text-white uppercase font-bold'>Bo'sh joylar soni cheklangan shoshiling</button>
+            <button className='py-2 mb-2 text-[12px] lg:text-base w-full rounded-2xl bg-orange-600 text-white uppercase font-bold'>Bo'sh joylar soni cheklangan shoshiling</button>
             <p className='text-lg text-center lg:text-start'>oylik narx 700.000 so’m , bolalar soniga qarab <span className='font-bold text-main'> 8% dan 10% gacha </span>chegirmalar</p>
           </div>
-          <img src={youngGirl} alt="" className='w-[754px] hidden lg:block ml-10' />
+          <img src={youngGirl} alt="" className='w-[754px] block ml-10' />
         </div>
       </section>
       {/* Darslarni tez o'rganish  */}
@@ -84,7 +84,7 @@ const Home = () => {
                     Professional dasturlar bilan <br /> bolalarning ta’lim olishiga ko‘maklashish
                   </h3>
                 </div>
-                <ul class="text-sm text-gray-700 space-y-2 list-disc list-inside">
+                <ul class=" text-gray-700 space-y-2 list-disc text-xl list-inside">
                   <li>Ixtisoslashgan darslar 4-yoshdan 6 yoshgacha</li>
                   <li>Bolalar zerikmasligi va tez o‘rganishi uchun, ularning qiziqishlariga qarab yo‘naltirish</li>
                   <li>Har bir o‘rganuvchi uchun maxsus ta’lim asboblari</li>
@@ -98,7 +98,7 @@ const Home = () => {
                     1-yoshdan 4-yoshgacha <br /> shaxsiy rivojlanish
                   </h3>
                 </div>
-                <ul class="text-sm text-gray-700 space-y-2 list-disc list-inside">
+                <ul class=" text-gray-700 space-y-2 list-disc text-xl list-inside">
                   <li>Bolalar xotirasini kuchaytirish uchun maxsus o‘yinchoqlar</li>
                   <li>Kundalik o‘rgangan narsalarini so‘rash, ularga qiziqish bildirish</li>
                   <li>Bolalarga motivatsiya berish uchun sayohatlar</li>
@@ -114,28 +114,28 @@ const Home = () => {
                     Maxsus Mental <br /> Arifmetika darsligi
                   </h3>
                 </div>
-                <ul class="text-sm text-gray-700 space-y-2 list-disc list-inside">
+                <ul class=" text-gray-700 space-y-2 list-disc text-xl list-inside">
                   <li>Maktab ta’limidan oldin ularni varoqda emas miyyalarida</li>
                   <li>Murakkab sonlarni yechishga tayyorlash</li>
                   <li>Bolalar aqliy o‘sishi uchun ular bilan alohida o‘tkaziladigan darslar</li>
                 </ul>
               </div>
-              <img src={glassesKid} alt="" className='hidden lg:block'/>
+              <img src={glassesKid} alt="" className='block'/>
             </div>
           </div>
         </div>
       </section>
       <section className='py-16'>
         <div className="container  mx-auto flex flex-col ">
-          <div className="px-23 py-20 bg-[#FFDFDF] rounded-tl-[150px] grid grid-cols-1 lg:grid-cols-2 items-center rounded-tr-4xl rounded-bl-4xl rounded-br-4xl">
+          <div className="lg:px-23 lg:py-20  lg:bg-[#FFDFDF] rounded-tl-[150px] grid grid-cols-1 lg:grid-cols-2 items-center rounded-tr-4xl rounded-bl-4xl rounded-br-4xl">
             <img src={blackGlasses} alt="" className='hidden lg:block' />
             <ul className='flex flex-col gap-5'>
               {
                 fikrlash.map((fikr, index) => (
-                  <li className='flex flex-col lg:flex-row justify-center lg:justify-betweeb gap-4 items-center'>
+                  <li className='flex flex-row justify-center lg:justify-betweeb gap-7 items-start'>
                     <img src={fikr.img} alt="" className='20' />
                     <div className="flex flex-col">
-                      <h2 className='font-semibold text-xl text-center lg:text-start '>{fikr.title}</h2>
+                      <h2 className='font-semibold text-base lg:text-start '>{fikr.title}</h2>
                       <p className='opacity-70 text-justify'>{fikr.text}</p>
                     </div>
                   </li>
@@ -148,9 +148,9 @@ const Home = () => {
       {/* yosh  */}
       <section className='py-16 relative min-h-screen'>
         <div className="container  mx-auto flex flex-col ">
-          <div className="hidden lg:block">
-          <img src={redVector} alt="" className='absolute left-0 h-[685px]' />
-          <img src={laptopGirl} alt="" className='absolute left-0 w-[685px] h-[685px]' />
+          <div className="block">
+          <img src={redVector} alt="" className= 'hidden lg:block absolute left-0 h-[685px]' />
+          <img src={laptopGirl} alt="" className='hidden lg:block absolute left-0 w-[685px] h-[685px]' />
           </div>
           <div className="relative lg:absolute left-0 lg:left-[50%]">
             <h2 className="text-3xl font-bold text-center mb-4">
@@ -163,7 +163,7 @@ const Home = () => {
 
             <div className="flex flex-col lg:flex-row justify-center items-center gap-6">
               <div className="bg-white shadow-lg cursor-pointer rounded-xl p-15 flex flex-col items-center hover:shadow-xl transition">
-                <div className="py-6 px-3 rounded-full border-2 border-gray-200 flex items-center justify-center mb-4">
+                <div className="p-10 rounded-full border-2 border-gray-200 flex items-center justify-center mb-4">
                   <img
                     src={age1}
                     alt="Yosh 1-2"
@@ -171,11 +171,11 @@ const Home = () => {
                   />
                 </div>
                 <p className="text-2xl font-semibold">Yosh</p>
-                <p className="text-sm text-gray-600">1-2</p>
+                <p className=" text-gray-600">1-2</p>
               </div>
 
               <div className="bg-white shadow-lg cursor-pointer rounded-xl p-15 flex flex-col items-center hover:shadow-xl transition">
-                <div className="py-6 px-3 rounded-full border-2 border-gray-200 flex items-center justify-center mb-4">
+                <div className="p-10 rounded-full border-2 border-gray-200 flex items-center justify-center mb-4">
                   <img
                     src={age2}
                     alt="Yosh 3-4"
@@ -183,11 +183,11 @@ const Home = () => {
                   />
                 </div>
                 <p className="text-2xl font-semibold">Yosh</p>
-                <p className="text-sm text-gray-600">3-4</p>
+                <p className=" text-gray-600">3-4</p>
               </div>
 
               <div className="bg-white shadow-lg cursor-pointer rounded-xl p-15 flex flex-col items-center hover:shadow-xl transition">
-                <div className="py-6 px-3 rounded-full border-2 border-gray-200 flex items-center justify-center mb-4">
+                <div className="p-10 rounded-full border-2 border-gray-200 flex items-center justify-center mb-4">
                   <img
                     src={age3}
                     alt="Yosh 5-6"
@@ -195,7 +195,7 @@ const Home = () => {
                   />
                 </div>
                 <p className="text-2xl font-semibold">Yosh</p>
-                <p className="text-sm text-gray-600">5-6</p>
+                <p className=" text-gray-600">5-6</p>
               </div>
             </div>
           </div>
@@ -248,7 +248,7 @@ const Home = () => {
       </section>
 
       {/* contact  */}
-      <section className='py-20'>
+      <section className='py-0 lg:py-16'>
         <h2 className="text-3xl font-bold text-center  mb-4">
           Aloqa qiling
         </h2>
@@ -295,7 +295,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className='py-16'>
+      <section className=''>
         <div className="w-full h-[258px] overflow-hidden">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d810.612364839323!2d70.0686055664879!3d41.03343889024473!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38afebec4065cd21%3A0x9aff85a5ffd5e8b0!2sWunderkind!5e0!3m2!1sen!2s!4v1747383969715!5m2!1sen!2s"     className="w-full h-full border-0"
  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      </div>
