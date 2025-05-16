@@ -13,9 +13,9 @@ const Header = () => {
                 <Link to="/"><img src={logo} alt="logo" className='w-18 rounded-full' /> </Link>
                 {/* nav */}
                 <ul className='gap-6 items-center hidden lg:flex'>
-                    <Link to="/"><li className='py-4 px-8 border-2 rounded-2xl text-mainText font-nunito font-extrabold text-base uppercase border-main hover:bg-main hover:text-white ease-in-out duration-200 transition-all'>Bosh sahifa</li></Link>
-                    <Link to="/about"><li className='py-4 px-8 border-2 rounded-2xl text-mainText font-nunito font-extrabold text-base uppercase border-main hover:bg-main hover:text-white ease-in-out duration-200 transition-all'>Biz haqimizda</li></Link>
-                    <Link to="/kurslar"><li className='py-4 px-8 border-2 rounded-2xl text-mainText font-nunito font-extrabold text-base uppercase border-main hover:bg-main hover:text-white ease-in-out duration-200 transition-all'>Kurslar</li></Link>
+                    <Link to="/"><li className='py-3 px-6 border-2 rounded-2xl text-mainText font-nunito font-extrabold text-base uppercase border-main hover:bg-main hover:text-white ease-in-out duration-200 transition-all'>Bosh sahifa</li></Link>
+                    <Link to="/about"><li className='py-3 px-6 border-2 rounded-2xl text-mainText font-nunito font-extrabold text-base uppercase border-main hover:bg-main hover:text-white ease-in-out duration-200 transition-all'>Biz haqimizda</li></Link>
+                    <Link to="/kurslar"><li className='py-3 px-6 border-2 rounded-2xl text-mainText font-nunito font-extrabold text-base uppercase border-main hover:bg-main hover:text-white ease-in-out duration-200 transition-all'>Kurslar</li></Link>
                 </ul>
                 <div className="hidden lg:flex gap-6 items-center ">
                     <div className="flex items-center gap-3  lg px-4 py-2 w-fit">
@@ -31,7 +31,7 @@ const Header = () => {
                 </div>
                 <button
                     onClick={() => setIsOpen(true)}
-                    className="p-3 bg-main text-white rounded-md shadow hover:opacity-40 transition"
+                    className="p-3 block lg:hidden bg-main text-white rounded-md shadow hover:opacity-40 transition"
                 >
                     <img src={hamburger} alt="" className='w-8' />
                 </button>

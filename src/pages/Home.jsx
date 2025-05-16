@@ -16,6 +16,7 @@ import quote from "../img/quote.png"
 import lisa from "../img/lisa.png"
 import jimmy from "../img/jimmy.png"
 import trophy from "../img/trophy.png"
+import video from '../img/video.MOV'
 
 const Home = () => {
   const [numberValue, setNumberValue] = useState("+998");
@@ -51,7 +52,7 @@ const Home = () => {
             <h1 className='font-bold text-6xl text-center lg:text-start mb-2'>Qanday qilib bolalarni Ingliz tili Rus tili, Mental arifmetika va boshqa darslarga qiziqtirish mumkun?
             </h1>
             <h3 className='text-2xl font-bold uppercase text-center lg:text-start mb-2'>o’z joyingizni band qiling</h3>
-            <ul className="flex flex-wrap  justify-center lg:justify-startgap-6 max-w-[600px] mb-2">
+            <ul className="flex flex-wrap  justify-center gap-5 max-w-[600px] mb-2">
               <li className="cursor-pointer font-semibold text-xl py-3 px-5 bg-white rounded-xl shadow-md hover:shadow-2xl ease-in-out duration-300">1-yosh</li>
               <li className="cursor-pointer font-semibold text-xl py-3 px-5 bg-white rounded-xl shadow-md hover:shadow-2xl ease-in-out duration-300">2-yosh</li>
               <li className="cursor-pointer font-semibold text-xl py-3 px-5 bg-white rounded-xl shadow-md hover:shadow-2xl ease-in-out duration-300">3-yosh</li>
@@ -62,7 +63,7 @@ const Home = () => {
             <button className='py-5 mb-2 w-full rounded-2xl bg-orange-600 text-white uppercase font-bold'>Bo'sh joylar soni cheklangan shoshiling</button>
             <p className='text-lg text-center lg:text-start'>oylik narx 700.000 so’m , bolalar soniga qarab <span className='font-bold text-main'> 8% dan 10% gacha </span>chegirmalar</p>
           </div>
-          <img src={youngGirl} alt="" className='w-[754px] hidden lg:block ml-8' />
+          <img src={youngGirl} alt="" className='w-[754px] hidden lg:block ml-10' />
         </div>
       </section>
       {/* Darslarni tez o'rganish  */}
@@ -70,7 +71,7 @@ const Home = () => {
         <div className="container">
           <div class="bg-white py-12 px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-              <h2 class="text-4xl font-extrabold text-green-500">
+              <h2 class="text-4xl font-extrabold text-main">
                 Darslarni tez va mukammal o‘rganish <br /> Eng yaxshi tarbiyachi Hammassi bizda
               </h2>
             </div>
@@ -79,7 +80,7 @@ const Home = () => {
               <div class="bg-pink-100 rounded-2xl p-6 shadow-md">
                 <div class="flex items-start space-x-4 mb-4">
                   <img src={img1} alt="icon" class="w-14 h-14" />
-                  <h3 class="font-bold text-base text-black mb-3 leading-tight">
+                  <h3 class="font-bold text-xl text-black mb-3 leading-tight">
                     Professional dasturlar bilan <br /> bolalarning ta’lim olishiga ko‘maklashish
                   </h3>
                 </div>
@@ -134,7 +135,7 @@ const Home = () => {
                   <li className='flex flex-col lg:flex-row justify-center lg:justify-betweeb gap-4 items-center'>
                     <img src={fikr.img} alt="" className='20' />
                     <div className="flex flex-col">
-                      <h2 className='font-semibold text-xl'>{fikr.title}</h2>
+                      <h2 className='font-semibold text-xl '>{fikr.title}</h2>
                       <p className='opacity-70'>{fikr.text}</p>
                     </div>
                   </li>
@@ -339,11 +340,6 @@ const Home = () => {
 
           {/* Image */}
           <div className="flex justify-center">
-            <img
-              src={calendar}
-              alt="Calendar illustration"
-              className="max-w-2xl w-full object-contain hidden lg:block"
-            />
           </div>
         </div>
       </section>
