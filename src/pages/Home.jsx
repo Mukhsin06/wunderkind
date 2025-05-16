@@ -17,6 +17,13 @@ import lisa from "../img/lisa.png"
 import jimmy from "../img/jimmy.png"
 import trophy from "../img/trophy.png"
 import video from '../img/video.MOV'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+
 
 const Home = () => {
   const [numberValue, setNumberValue] = useState("+998");
@@ -60,7 +67,7 @@ const Home = () => {
               <li className="cursor-pointer font-semibold text-xl py-3 px-5 bg-white rounded-xl shadow-md hover:shadow-2xl ease-in-out duration-300">5-yosh</li>
               <li className="cursor-pointer font-semibold text-xl py-3 px-5 bg-white rounded-xl shadow-md hover:shadow-2xl ease-in-out duration-300">6-yosh</li>
             </ul>
-            <button className='py-2 mb-2 text-[12px] lg:text-base w-full rounded-2xl bg-orange-600 text-white uppercase font-bold'>Bo'sh joylar soni cheklangan shoshiling</button>
+            <button className='py-2 mb-2 text-[12px] lg:text-base w-full rounded-[7px] bg-orange-600 text-white uppercase font-bold'>Bo'sh joylar soni cheklangan shoshiling</button>
             <p className='text-lg text-center lg:text-start'>oylik narx 700.000 so’m , bolalar soniga qarab <span className='font-bold text-main'> 8% dan 10% gacha </span>chegirmalar</p>
           </div>
           <img src={youngGirl} alt="" className='w-[754px] block ml-10' />
@@ -68,37 +75,36 @@ const Home = () => {
       </section>
       {/* Darslarni tez o'rganish  */}
       <section className='py-16'>
-        <div className="container  mx-auto flex flex-col ">
+        <div className="container mx-auto flex flex-col ">
           <div class="bg-white py-12 px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
               <h2 class="text-xl lg:text-4xl font-extrabold text-main">
                 Darslarni tez va mukammal o‘rganish <br /> Eng yaxshi tarbiyachi Hammassi bizda
               </h2>
             </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-4 justify-center gap-6">
-              <div class="bg-pink-100 rounded-2xl p-6 shadow-md">
+            <div class="grid grid-cols-1 lg:grid-cols-4 justify-center gap-4">
+              <div class="bg-pink-100 rounded-2xl px-10 py-6 shadow-md">
                 <div class="flex items-start space-x-4 mb-4">
                   <img src={img1} alt="icon" class="w-14 h-14" />
-                  <h3 class="font-bold text-xl text-black mb-3 leading-tight">
+                  <h3 class="font-bold text-lg text-black mb-3 leading-tight">
                     Professional dasturlar bilan <br /> bolalarning ta’lim olishiga ko‘maklashish
                   </h3>
                 </div>
-                <ul class=" text-gray-700 space-y-2 list-disc text-xl list-inside">
+                <ul class=" text-gray-700 space-y-2 list-disc text-lg list-inside">
                   <li>Ixtisoslashgan darslar 4-yoshdan 6 yoshgacha</li>
                   <li>Bolalar zerikmasligi va tez o‘rganishi uchun, ularning qiziqishlariga qarab yo‘naltirish</li>
                   <li>Har bir o‘rganuvchi uchun maxsus ta’lim asboblari</li>
                 </ul>
               </div>
 
-              <div class="bg-yellow-100 rounded-2xl p-6 shadow-md">
+              <div class="bg-yellow-100 rounded-2xl px-10 py-6 shadow-md">
                 <div class="flex items-start space-x-4 mb-4">
                   <img src={img2} alt="icon" class="w-14 h-14" />
                   <h3 class="font-bold text-lg text-black mb-3 leading-tight">
                     1-yoshdan 4-yoshgacha <br /> shaxsiy rivojlanish
                   </h3>
                 </div>
-                <ul class=" text-gray-700 space-y-2 list-disc text-xl list-inside">
+                <ul class=" text-gray-700 space-y-2 list-disc text-lg list-inside">
                   <li>Bolalar xotirasini kuchaytirish uchun maxsus o‘yinchoqlar</li>
                   <li>Kundalik o‘rgangan narsalarini so‘rash, ularga qiziqish bildirish</li>
                   <li>Bolalarga motivatsiya berish uchun sayohatlar</li>
@@ -106,7 +112,7 @@ const Home = () => {
               </div>
 
 
-              <div class="bg-blue-100 rounded-2xl p-6 shadow-md">
+              <div class="bg-blue-100 rounded-2xl px-10 py-6 shadow-md">
                 <div class="flex items-start space-x-4 mb-4">
 
                   <img src={img3} alt="icon" class="w-14 h-14" />
@@ -114,7 +120,7 @@ const Home = () => {
                     Maxsus Mental <br /> Arifmetika darsligi
                   </h3>
                 </div>
-                <ul class=" text-gray-700 space-y-2 list-disc text-xl list-inside">
+                <ul class=" text-gray-700 space-y-2 list-disc text-lg list-inside">
                   <li>Maktab ta’limidan oldin ularni varoqda emas miyyalarida</li>
                   <li>Murakkab sonlarni yechishga tayyorlash</li>
                   <li>Bolalar aqliy o‘sishi uchun ular bilan alohida o‘tkaziladigan darslar</li>
@@ -173,7 +179,6 @@ const Home = () => {
                 <p className="text-2xl font-semibold">Yosh</p>
                 <p className=" text-gray-600">1-2</p>
               </div>
-
               <div className="bg-white shadow-lg cursor-pointer rounded-xl p-15 flex flex-col items-center hover:shadow-xl transition">
                 <div className="p-10 rounded-full border-2 border-gray-200 flex items-center justify-center mb-4">
                   <img
@@ -202,50 +207,44 @@ const Home = () => {
         </div>
       </section>
       <section className="py-16 bg-white">
-          <h2 className="text-3xl text-center font-bold text-black mb-2">Our Testimonial</h2>
-          <p className="text-xl text-center font-semibold text-black mb-12">
-            at Smart Academy
-          </p>
-        <div className="container  mx-auto flex flex-col ">
-          <ul className='flex flex-col gap-10 text-center mx-auto'>
-            <ul className='flex flex-row gap-7 justify-end'>
-              {testimonials.slice(0, 3).map((item, index) => (
-                <div key={index} className="flex flex-col items-center text-center">
-                  <div
-                    className={`w-20 h-20 rounded-full object-cover shadow mb-4 ${item.imgBg}`}
-                  >
-                    <img
-                      src=""
-                      alt={item.name}
-                      className="w-full h-full rounded-full object-cover"
-                    />
-                  </div>
-                  <h3 className="text-blue-600 font-semibold">{item.name}</h3>
-                  <p className="text-sm text-gray-600 max-w-xs">{item.description}</p>
-                </div>
-              ))}
-            </ul>
-            <ul className='flex flex-row gap-7 justify-start'>
-              {testimonials.slice(0, 3).map((item, index) => (
-                <div key={index} className="flex flex-col items-center text-center">
-                  <div
-                    className={`w-20 h-20 rounded-full object-cover shadow mb-4 ${item.imgBg}`}
-                  >
-                    <img
-                      src=""
-                      alt={item.name}
-                      className="w-full h-full rounded-full object-cover"
-                    />
-                  </div>
-                  <h3 className="text-blue-600 font-semibold">{item.name}</h3>
-                  <p className="text-sm text-gray-600 max-w-xs">{item.description}</p>
-                </div>
-              ))}
-            </ul>
+      <h2 className="text-3xl text-center font-bold text-black mb-2">Our Testimonial</h2>
+      <p className="text-xl text-center font-semibold text-black mb-12">
+        at Smart Academy
+      </p>
 
-          </ul>
-        </div>
-      </section>
+      <div className="container mx-auto px-4">
+        <Swiper
+          modules={[Pagination, Navigation]}
+          spaceBetween={30}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+          breakpoints={{
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
+        >
+          {testimonials.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div className="flex mb-10 flex-col items-center text-center p-4 bg-gray-50 rounded-lg shadow-md">
+                <div
+                  className={`w-20 h-20 rounded-full shadow mb-4 flex items-center justify-center overflow-hidden ${item.imgBg}`}
+                >
+                  <img
+                    src={item.img}
+                    alt={item.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-blue-600 font-semibold">{item.name}</h3>
+                <p className="text-sm text-gray-600 max-w-xs mt-2">{item.description}</p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </section>
 
       {/* contact  */}
       <section className='py-0 lg:py-16'>
