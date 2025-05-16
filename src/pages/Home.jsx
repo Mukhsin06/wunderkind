@@ -46,10 +46,10 @@ const Home = () => {
     <div className='font-nunito'>
       {/* hero  */}
       <section className='py-16'>
-        <div className="container flex justify-center lg:justify-between items-center">
+        <div className="container mx-auto flex flex-col lg:flex-row items-center gap-8 px-4">
           {/* text panel  */}
           <div className="w-full max-w-[680px]">
-            <h1 className='font-bold text-6xl text-center lg:text-start mb-2'>Qanday qilib bolalarni Ingliz tili Rus tili, Mental arifmetika va boshqa darslarga qiziqtirish mumkun?
+            <h1 className='font-bold text-3xl lg:text-5xl text-center lg:text-start mb-2'>Qanday qilib bolalarni Ingliz tili Rus tili, Mental arifmetika va boshqa darslarga qiziqtirish mumkun?
             </h1>
             <h3 className='text-2xl font-bold uppercase text-center lg:text-start mb-2'>o’z joyingizni band qiling</h3>
             <ul className="flex flex-wrap  justify-center gap-5 max-w-[600px] mb-2">
@@ -60,7 +60,7 @@ const Home = () => {
               <li className="cursor-pointer font-semibold text-xl py-3 px-5 bg-white rounded-xl shadow-md hover:shadow-2xl ease-in-out duration-300">5-yosh</li>
               <li className="cursor-pointer font-semibold text-xl py-3 px-5 bg-white rounded-xl shadow-md hover:shadow-2xl ease-in-out duration-300">6-yosh</li>
             </ul>
-            <button className='py-5 mb-2 w-full rounded-2xl bg-orange-600 text-white uppercase font-bold'>Bo'sh joylar soni cheklangan shoshiling</button>
+            <button className='py-5 mb-2 text-[12px] lg:text-base w-full rounded-2xl bg-orange-600 text-white uppercase font-bold'>Bo'sh joylar soni cheklangan shoshiling</button>
             <p className='text-lg text-center lg:text-start'>oylik narx 700.000 so’m , bolalar soniga qarab <span className='font-bold text-main'> 8% dan 10% gacha </span>chegirmalar</p>
           </div>
           <img src={youngGirl} alt="" className='w-[754px] hidden lg:block ml-10' />
@@ -68,10 +68,10 @@ const Home = () => {
       </section>
       {/* Darslarni tez o'rganish  */}
       <section className='py-16'>
-        <div className="container">
+        <div className="container  mx-auto flex flex-col ">
           <div class="bg-white py-12 px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-              <h2 class="text-4xl font-extrabold text-main">
+              <h2 class="text-xl lg:text-4xl font-extrabold text-main">
                 Darslarni tez va mukammal o‘rganish <br /> Eng yaxshi tarbiyachi Hammassi bizda
               </h2>
             </div>
@@ -126,7 +126,7 @@ const Home = () => {
         </div>
       </section>
       <section className='py-16'>
-        <div className="container">
+        <div className="container  mx-auto flex flex-col ">
           <div className="px-23 py-20 bg-[#FFDFDF] rounded-tl-[150px] grid grid-cols-1 lg:grid-cols-2 items-center rounded-tr-4xl rounded-bl-4xl rounded-br-4xl">
             <img src={blackGlasses} alt="" className='hidden lg:block' />
             <ul className='flex flex-col gap-5'>
@@ -135,8 +135,8 @@ const Home = () => {
                   <li className='flex flex-col lg:flex-row justify-center lg:justify-betweeb gap-4 items-center'>
                     <img src={fikr.img} alt="" className='20' />
                     <div className="flex flex-col">
-                      <h2 className='font-semibold text-xl '>{fikr.title}</h2>
-                      <p className='opacity-70'>{fikr.text}</p>
+                      <h2 className='font-semibold text-xl text-center lg:text-start '>{fikr.title}</h2>
+                      <p className='opacity-70 text-justify'>{fikr.text}</p>
                     </div>
                   </li>
                 ))
@@ -147,12 +147,12 @@ const Home = () => {
       </section>
       {/* yosh  */}
       <section className='py-16 relative min-h-screen'>
-        <div className="container">
+        <div className="container  mx-auto flex flex-col ">
           <div className="hidden lg:block">
           <img src={redVector} alt="" className='absolute left-0 h-[685px]' />
           <img src={laptopGirl} alt="" className='absolute left-0 w-[685px] h-[685px]' />
           </div>
-          <div className="absolute left-0 lg:left-[50%]">
+          <div className="relative lg:absolute left-0 lg:left-[50%]">
             <h2 className="text-3xl font-bold text-center mb-4">
               O‘z talabingizni yozing
             </h2>
@@ -161,7 +161,7 @@ const Home = () => {
               Bu savol talab qilinadi
             </p>
 
-            <div className="flex flex-row justify-center items-center gap-6">
+            <div className="flex flex-col lg:flex-row justify-center items-center gap-6">
               <div className="bg-white shadow-lg cursor-pointer rounded-xl p-15 flex flex-col items-center hover:shadow-xl transition">
                 <div className="py-6 px-3 rounded-full border-2 border-gray-200 flex items-center justify-center mb-4">
                   <img
@@ -201,60 +201,12 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="py-20  relative">
-        <div className="max-w-screen lg:max-w-[1200px] bg-[#FFF1D7] p-20 mx-auto rounded-t-[150px] text-center">
-          <div className="mb-4 font-semibold flex justify-center text-orange-400 items-center gap-2">
-            <img src={trophy} alt="Trophy" className="w-6 h-6" />
-            <span>Creta Class Has Industry-Leading Renewals Of Above 80%</span>
-          </div>
-
-          <h2 className="text-3xl font-bold mb-10">
-            Don’t Just Take Our Word For It
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-20">
-            {/* Testimonial 1 */}
-            <div className="bg-pink-100 p-10 w-[527px] h-[324px] rounded-xl flex gap-10 shadow-md relative border border-dashed border-black">
-              <p className="text-xl  text-justify font-semibold flex items-end">
-                Like well-made animations, Creta Class is well designed to cater
-                to kids’ feature. My son is 4 years old, and he is immersed in its
-                interesting and simple exercises.
-              </p>
-              <div className="flex flex-col items-start gap-2">
-                <img
-                  src={lisa}
-                  alt="Lisa"
-                  className="w-30 h-40  border-2 border-pink-400 object-cover"
-                />
-                <span className="font-bold w-30 text-end">- Lisa</span>
-              </div>
-            </div>
-
-            {/* Testimonial 2 */}
-            <div className="bg-pink-100 p-10 w-[527px] h-[324px] rounded-xl flex gap-10 shadow-md relative border border-dashed border-black">
-              <p className="text-xl text-justify font-semibold flex items-end">
-                Like well-made animations, Creta Class is well designed to cater
-                to kids’ feature. My son is 4 years old, and he is immersed in its
-                interesting and simple exercises.
-              </p>
-              <div className="flex flex-col items-start gap-2">
-                <img
-                  src={jimmy}
-                  alt="Jimmy"
-                  className="w-30 h-40  border-2 border-pink-400 object-cover"
-                />
-                <span className="font-bold  w-30 text-end">- Jimmy</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <section className="py-16 bg-white">
           <h2 className="text-3xl text-center font-bold text-black mb-2">Our Testimonial</h2>
           <p className="text-xl text-center font-semibold text-black mb-12">
             at Smart Academy
           </p>
-        <div className="container">
+        <div className="container  mx-auto flex flex-col ">
           <ul className='flex flex-col gap-10 text-center mx-auto'>
             <ul className='flex flex-row gap-7 justify-end'>
               {testimonials.slice(0, 3).map((item, index) => (
@@ -304,7 +256,7 @@ const Home = () => {
           Sifatli sayyohlik agentliklari pul qiymatini ta'minlaydi, degan konsensus mavjud edi. Biroq, bu ko‘plab iste'molchilarning yuqori <br /> darajadagi tashvishi bilan birga keldi
         </p>
 
-        <div className="container grid grid-cols-1 lg:grid-cols-2 items-center justify-between gap-50">
+        <div className="container  mx-auto flex flex-col  grid grid-cols-1 lg:grid-cols-2 items-center justify-between gap-50">
 
           <div className="">
             <form className="space-y-4">
