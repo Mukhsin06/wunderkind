@@ -46,10 +46,10 @@ const Footer = () => {
           </ul>
           <div className="flex gap-4 items-center">
           <div className="flex gap-4 mt-4">
-            <a href="#" className="hover:scale-110 transition-transform">
+            <a href="https://www.instagram.com/wunderkind_bolalarbogchasi/" className="hover:scale-110 transition-transform">
               <FaInstagram className="w-6 h-6 text-pink-400" />
             </a>
-            <a href="#" className="hover:scale-110 transition-transform">
+            <a href="https://t.me/+Og0Hsr9WtMQxNDRi?fbclid=PAZXh0bgNhZW0CMTEAAafUl1-c_dhvdhE-NZ-gXZgnxxt5qh5zGxf3P3FgBgJtaBZqGbf77Z-7CsiGqQ_aem_BGM2awvaEiuoS7oWSndreQ" className="hover:scale-110 transition-transform">
               <FaTelegram className="w-6 h-6 text-blue-400" />
             </a>
           </div>
