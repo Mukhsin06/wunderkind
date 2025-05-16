@@ -1,1 +1,9 @@
 @import "tailwindcss";
+.container{
+    @apply w-full max-w-[1420px] mx-auto px-5
+}
+ @theme{
+    --color-main: #2CC84D;
+    --font-nunito: "Nunito", sans-serif;
+    --color-mainText: "#495340";
+}
