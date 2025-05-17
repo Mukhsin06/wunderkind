@@ -255,7 +255,7 @@ const Home = () => {
           Sifatli sayyohlik agentliklari pul qiymatini ta'minlaydi, degan konsensus mavjud edi. Biroq, bu ko‘plab iste'molchilarning yuqori <br /> darajadagi tashvishi bilan birga keldi
         </p>
 
-        <div className="container  mx-auto flex flex-col  grid grid-cols-1 lg:grid-cols-2 items-center justify-between gap-50">
+        <div className="container  mx-auto  flex-col  grid grid-cols-1 lg:grid-cols-2 items-center justify-between gap-50">
 
           <div className="">
             <form className="space-y-4">
