@@ -3,7 +3,7 @@
     @apply w-full max-w-[1520px] mx-auto px-5
 }
  @theme{
-    --color-main:#4682B4    ;
+    --color-main:#80D8FE  ;
     --font-nunito: "Nunito", sans-serif;
     --color-mainText: "#495340";
 }

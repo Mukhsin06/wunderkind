@@ -37,8 +37,8 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-2">Aloqa</h3>
           <ul className="text-gray-300 text-sm space-y-1">
-            <li><FaPhone className="inline mr-2" />+998 90 142 05 05</li>
-            <li><FaPhone className="inline mr-2" />+998 99 077 30 505</li>
+            <a href="tel: +998901420505"><li><FaPhone className="inline mr-2" />+998 90 142 0505</li></a>
+            <a href="tel: +998907730505"><li><FaPhone className="inline mr-2" />+998 90 773 0505</li></a>
           </ul>
           <div className="flex gap-4 items-center">
           <div className="flex gap-4 mt-4">

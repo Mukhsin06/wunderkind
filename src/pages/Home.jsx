@@ -67,7 +67,7 @@ const Home = () => {
               <li className="cursor-pointer font-semibold text-xl py-3 px-5 bg-white rounded-xl shadow-md hover:shadow-2xl ease-in-out duration-300">5-yosh</li>
               <li className="cursor-pointer font-semibold text-xl py-3 px-5 bg-white rounded-xl shadow-md hover:shadow-2xl ease-in-out duration-300">6-yosh</li>
             </ul>
-            <button className='py-2 mb-2 text-[12px] lg:text-base w-full rounded-[7px] bg-orange-600 text-white uppercase font-bold'>Bo'sh joylar soni cheklangan shoshiling</button>
+            <button className='py-2 mb-2 text-[12px] lg:text-base w-full rounded-[7px] bg-main text-white uppercase font-bold'>Bo'sh joylar soni cheklangan shoshiling</button>
             <p className='text-lg text-center lg:text-start'>oylik narx 700.000 so’m , bolalar soniga qarab <span className='font-bold text-main'> 8% dan 10% gacha </span>chegirmalar</p>
           </div>
           <img src={youngGirl} alt="" className='w-[754px] block ml-10' />
@@ -232,7 +232,7 @@ const Home = () => {
                   className={`w-20 h-20 rounded-full shadow mb-4 flex items-center justify-center overflow-hidden ${item.imgBg}`}
                 >
                   <img
-                    src={item.img}
+                    src={lisa}
                     alt={item.name}
                     className="w-full h-full object-cover"
                   />
@@ -282,7 +282,7 @@ const Home = () => {
                 className="w-full border border-gray-300 rounded-md py-3 px-4 focus:outline-none focus:ring-2 focus:ring-orange-400"
               />                              <button
                 type="submit"
-                className="bg-orange-500 hover:bg-orange-600 transition text-white py-3 px-8 rounded-md w-full"
+                className="bg-[#80D8FE] hover:bg-[#80D8FE]/40 transition text-white py-3 px-8 rounded-md w-full"
               >
                 Yuborish
               </button>

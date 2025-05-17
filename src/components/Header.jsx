@@ -23,8 +23,8 @@ const Header = () => {
                             <img src={phone} alt="" className='w-14' />
                         </div>
                         <div className="leading-tight">
-                            <p className="text-gray-500 text-sm">Mon-Sat: 12:30–20:30</p>
-                            <p className="text-main font-bold text-lg">+918069490088</p>
+                            <p className="text-gray-500 text-sm">dushanba-juma:  9.30-.17.30</p>
+                            <p className="text-main font-bold text-lg">+998901420505</p>
                         </div>
                     </div>
                     <button className='text-white rounded-2xl cursor-pointer py-2.5 px-6 font-medium text-xl leading-[30px] bg-main hover:opacity-70 ease-in-out duration-200'>Murojat uchun</button>
@@ -66,7 +66,7 @@ const Header = () => {
                             <img src={phone} alt="" className='w-14' />
                         </div>
                         <div className="leading-tight">
-                            <p className="text-main font-bold text-lg">+918069490088</p>
+                            <p className="text-main font-bold text-lg">+998901420505</p>
                         </div>
                     </div>
                 <button className='text-white rounded-2xl w-full cursor-pointer py-2.5 px-6 font-medium text-xl leading-[30px] bg-main hover:opacity-70 ease-in-out duration-200'>Murojat uchun</button>
