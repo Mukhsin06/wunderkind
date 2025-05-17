@@ -9,7 +9,6 @@ const Footer = () => {
     <div>
     <footer className="bg-gradient-to-br from-black to-gray-900 text-white py-12 px-6 md:px-20 font-sans">
       <div className="max-w-7xl mx-auto grid grid-cols-2 items-center md:grid-cols-4 gap-10">
-        {/* Logo & Tagline */}
         <div className="flex flex-col items-start gap-4">
           <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center text-black text-xl font-bold shadow-md hover:rotate-6 transition-transform duration-300">
             <img src={logo} alt="logo" className='rounded-full' />
@@ -17,7 +16,6 @@ const Footer = () => {
           <p className="text-gray-400 text-sm">Wunderkind o'quv markazi — farzandingizning kelajagi uchun ilk qadam.</p>
         </div>
 
-        {/* Address */}
         <div>
           <h3 className="text-lg font-semibold mb-2">Manzil</h3>
           <ul className="text-gray-300 text-sm space-y-1">
@@ -27,7 +25,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Working Hours */}
         <div>
           <h3 className="text-lg font-semibold mb-2">Ish vaqtlari</h3>
           <ul className="text-gray-300 text-sm space-y-1">
@@ -37,7 +34,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact & Social */}
         <div>
           <h3 className="text-lg font-semibold mb-2">Aloqa</h3>
           <ul className="text-gray-300 text-sm space-y-1">
@@ -61,7 +57,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Footer Bottom */}
       <div className="mt-12 text-center text-gray-500 text-sm border-t border-gray-700 pt-6">
         © {new Date().getFullYear()} Wunderkind. Barcha huquqlar himoyalangan.
       </div>
