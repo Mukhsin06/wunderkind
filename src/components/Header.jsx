@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router'
+import { Link, useLocation } from 'react-router'
 import logo from "../img/logo.png"
 import phone from "../img/phone-call.png"
 import hamburger from '../img/hamburger.svg'
 
 const Header = () => {
+    const location = useLocation()
+
     const [isOpen, setIsOpen] = useState(false)
     return (
         <header className='py-6 shadow-md fixed z-10 w-full bg-white font-nunito'>
@@ -13,9 +15,9 @@ const Header = () => {
                 <Link to="/"><img src={logo} alt="logo" className='w-18 rounded-full' /> </Link>
                 {/* nav */}
                 <ul className='gap-6 items-center hidden lg:flex'>
-                    <Link to="/"><li className='py-3 px-6 border-2 rounded-2xl text-mainText font-nunito font-extrabold text-base uppercase border-main hover:bg-main hover:text-white ease-in-out duration-200 transition-all'>Bosh sahifa</li></Link>
-                    <Link to="/about"><li className='py-3 px-6 border-2 rounded-2xl text-mainText font-nunito font-extrabold text-base uppercase border-main hover:bg-main hover:text-white ease-in-out duration-200 transition-all'>Biz haqimizda</li></Link>
-                    <Link to="/kurslar"><li className='py-3 px-6 border-2 rounded-2xl text-mainText font-nunito font-extrabold text-base uppercase border-main hover:bg-main hover:text-white ease-in-out duration-200 transition-all'>Kurslar</li></Link>
+                    <Link to="/"><li className={`${location.pathname === '/' ? 'bg-main text-white' : ''} py-3 px-6 border-2 rounded-2xl text-mainText font-nunito font-extrabold text-base uppercase border-main hover:bg-main hover:text-white ease-in-out duration-200 transition-all`}>Bosh sahifa</li></Link>
+                    <Link to="/about"><li className={`${location.pathname === '/about' ? 'bg-main text-white' : ''} py-3 px-6 border-2 rounded-2xl text-mainText font-nunito font-extrabold text-base uppercase border-main hover:bg-main hover:text-white ease-in-out duration-200 transition-all`}>Biz haqimizda</li></Link>
+                    <Link to="/kurslar"><li className={`${location.pathname === '/kurslar' ? 'bg-main text-white' : ''} py-3 px-6 border-2 rounded-2xl text-mainText font-nunito font-extrabold text-base uppercase border-main hover:bg-main hover:text-white ease-in-out duration-200 transition-all`}>Kurslar</li></Link>
                 </ul>
                 <div className="hidden lg:flex gap-6 items-center ">
                     <div className="flex items-center gap-3  lg px-4 py-2 w-fit">

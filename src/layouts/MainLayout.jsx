@@ -4,12 +4,12 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 
-const MainLayout = () => {
+const MainLayout = ({ children }) => {
     return (
-        <div className='flex flex-col min-h-screen body '>
+        <div className='flex flex-col min-h-screen'>
             <Header></Header>
-            <div className='grow mt-30 '>
-                <Outlet />
+            <div className='grow pt-15 '>
+                {children}
             </div>
             <Footer></Footer>
         </div>
