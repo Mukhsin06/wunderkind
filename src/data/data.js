@@ -2,6 +2,14 @@ import icon1 from "../img/icon1.png"
 import icon2 from "../img/icon2.png"
 import icon3 from "../img/icon3.png"
 import icon4 from "../img/icon4.png"
+import kid1 from "../img/kid1.png"
+import kid2 from "../img/kid2.png"
+import kid3 from "../img/kid4.png"
+import kid4 from "../img/kid4.png"
+import lisa from "../img/lisa.png"
+import jimmy from "../img/jimmy.png"
+
+
 
 
 export const fikrlash = [
@@ -28,36 +36,42 @@ export const fikrlash = [
 ]
 export const testimonials = [
     {
+      img: kid1,
       name: "Park Jee",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. lacus laoreet tristique.",
       imgBg: "bg-gray-200",
     },
     {
+      img: kid2,
       name: "Jasmine Vandervort",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. lacus laoreet tristique.",
       imgBg: "bg-pink-200",
     },
     {
+      img: kid3,
       name: "Jasmine Vandervort",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. lacus laoreet tristique.",
       imgBg: "bg-yellow-300",
     },
     {
+      img: jimmy,
       name: "Jon Lakin",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. lacus laoreet tristique.",
       imgBg: "bg-red-200",
     },
     {
+      img: kid4,
       name: "Husna mawadus",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. lacus laoreet tristique.",
       imgBg: "bg-pink-300",
     },
     {
+      img: lisa,
       name: "Jacob Kozey",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. lacus laoreet tristique.",

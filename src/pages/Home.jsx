@@ -25,6 +25,7 @@ import "swiper/css/navigation";
 
 
 
+
 const Home = () => {
   const [numberValue, setNumberValue] = useState("+998");
 
@@ -232,7 +233,7 @@ const Home = () => {
                   className={`w-20 h-20 rounded-full shadow mb-4 flex items-center justify-center overflow-hidden ${item.imgBg}`}
                 >
                   <img
-                    src={lisa}
+                    src={item.img}
                     alt={item.name}
                     className="w-full h-full object-cover"
                   />
@@ -291,6 +292,7 @@ const Home = () => {
 
           {/* Image */}
           <div className="flex justify-center">
+            <img src={calendar} alt="" />
           </div>
         </div>
       </section>
