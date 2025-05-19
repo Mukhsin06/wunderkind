@@ -2,7 +2,7 @@ import React from 'react'
 
 const Kurslar = () => {
   return (
-    <div>
+    <div className='pt-15'>
       kurslar
     </div>
   )

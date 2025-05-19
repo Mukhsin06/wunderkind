@@ -7,19 +7,19 @@ import About from './pages/About';
 import Kurslar from './pages/Kurslar';
 
 function App(props) {
-    const routes = createBrowserRouter(
-        createRoutesFromElements(
-          <Route element={<MainLayout/>}>
-            <Route path='/' element={<Home/>}></Route>
-            <Route path='/about' element={<About/>}></Route>
-            <Route path='/kurslar' element={<Kurslar/>}></Route>
-          </Route>
-        )
-      )
-    
-    return (
-        <RouterProvider router={routes}/>
-    );
+  const routes = createBrowserRouter(
+    createRoutesFromElements(
+      <Route>
+        <Route path='/' element={<MainLayout><Home /></MainLayout>}></Route>
+        <Route path='/about' element={<MainLayout><About /></MainLayout>}></Route>
+        <Route path='/kurslar' element={<MainLayout><Kurslar /></MainLayout>}></Route>
+      </Route>
+    )
+  )
+
+  return (
+    <RouterProvider router={routes} />
+  );
 }
 
 export default App;
